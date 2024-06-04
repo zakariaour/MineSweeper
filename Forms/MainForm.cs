@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MineSweeper.Models;
+using System;
+using MineSweeper.Enums;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,7 +31,25 @@ namespace MineSweeper
 
         private void débutantToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            var gameBoard = new Board(GameLevel.Beginner);
+            gameBoard.DebugBoard();
+        }
 
+        private void boardView1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void intermédiaireToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var gameBoard = new Board(GameLevel.Intermediate);
+            gameBoard.DebugBoard();
+        }
+
+        private void expertToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var gameBoard = new Board(GameLevel.Expert);
+            gameBoard.DebugBoard();
         }
     }
 }

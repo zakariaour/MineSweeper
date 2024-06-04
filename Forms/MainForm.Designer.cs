@@ -30,13 +30,14 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nouvellePartieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.débutantToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.intermédiaireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.expertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nouvellePartieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aProposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.GameBoardView = new MineSweeper.Controls.BoardView();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +66,12 @@
             this.fichierToolStripMenuItem.Text = "Fichier";
             this.fichierToolStripMenuItem.Click += new System.EventHandler(this.fichierToolStripMenuItem_Click);
             // 
+            // nouvellePartieToolStripMenuItem
+            // 
+            this.nouvellePartieToolStripMenuItem.Name = "nouvellePartieToolStripMenuItem";
+            this.nouvellePartieToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.nouvellePartieToolStripMenuItem.Text = "Nouvelle partie";
+            // 
             // débutantToolStripMenuItem
             // 
             this.débutantToolStripMenuItem.Name = "débutantToolStripMenuItem";
@@ -77,24 +84,20 @@
             this.intermédiaireToolStripMenuItem.Name = "intermédiaireToolStripMenuItem";
             this.intermédiaireToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.intermédiaireToolStripMenuItem.Text = "Intermédiaire";
+            this.intermédiaireToolStripMenuItem.Click += new System.EventHandler(this.intermédiaireToolStripMenuItem_Click);
             // 
             // expertToolStripMenuItem
             // 
             this.expertToolStripMenuItem.Name = "expertToolStripMenuItem";
             this.expertToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.expertToolStripMenuItem.Text = "Expert";
+            this.expertToolStripMenuItem.Click += new System.EventHandler(this.expertToolStripMenuItem_Click);
             // 
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
             this.quitterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.quitterToolStripMenuItem.Text = "Quitter";
-            // 
-            // nouvellePartieToolStripMenuItem
-            // 
-            this.nouvellePartieToolStripMenuItem.Name = "nouvellePartieToolStripMenuItem";
-            this.nouvellePartieToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.nouvellePartieToolStripMenuItem.Text = "Nouvelle partie";
             // 
             // toolStripMenuItem1
             // 
@@ -107,14 +110,23 @@
             // aProposToolStripMenuItem
             // 
             this.aProposToolStripMenuItem.Name = "aProposToolStripMenuItem";
-            this.aProposToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.aProposToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             this.aProposToolStripMenuItem.Text = "A propos";
+            // 
+            // GameBoardView
+            // 
+            this.GameBoardView.Location = new System.Drawing.Point(54, 66);
+            this.GameBoardView.Name = "GameBoardView";
+            this.GameBoardView.Size = new System.Drawing.Size(456, 279);
+            this.GameBoardView.TabIndex = 1;
+            this.GameBoardView.Load += new System.EventHandler(this.boardView1_Load);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.GameBoardView);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
@@ -138,6 +150,7 @@
         private System.Windows.Forms.ToolStripMenuItem nouvellePartieToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem aProposToolStripMenuItem;
+        private Controls.BoardView GameBoardView;
     }
 }
 
