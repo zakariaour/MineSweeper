@@ -1,0 +1,10 @@
+C:\Users\zoura\source\repos\MineSweeper\MineSweeper\bin\Debug\MineSweeper.exe.config
+C:\Users\zoura\source\repos\MineSweeper\MineSweeper\bin\Debug\MineSweeper.exe
+C:\Users\zoura\source\repos\MineSweeper\MineSweeper\bin\Debug\MineSweeper.pdb
+C:\Users\zoura\source\repos\MineSweeper\MineSweeper\obj\Debug\MineSweeper.csproj.AssemblyReference.cache
+C:\Users\zoura\source\repos\MineSweeper\MineSweeper\obj\Debug\MineSweeper.MainForm.resources
+C:\Users\zoura\source\repos\MineSweeper\MineSweeper\obj\Debug\MineSweeper.Properties.Resources.resources
+C:\Users\zoura\source\repos\MineSweeper\MineSweeper\obj\Debug\MineSweeper.csproj.GenerateResource.cache
+C:\Users\zoura\source\repos\MineSweeper\MineSweeper\obj\Debug\MineSweeper.csproj.CoreCompileInputs.cache
+C:\Users\zoura\source\repos\MineSweeper\MineSweeper\obj\Debug\MineSweeper.exe
+C:\Users\zoura\source\repos\MineSweeper\MineSweeper\obj\Debug\MineSweeper.pdb
